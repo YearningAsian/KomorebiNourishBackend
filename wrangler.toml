@@ -1,0 +1,12 @@
+# Komorebi Nourish API — Cloudflare Worker
+name = "komorebi-nourish-api"
+main = "src/index.ts"
+compatibility_date = "2026-06-01"
+
+# Custom domain (set up in the Cloudflare dashboard):
+# routes = [{ pattern = "nourish-api.komorebi.app/*", custom_domain = true }]
+
+# Secrets — set with `wrangler secret put <NAME>`:
+#   SUPABASE_URL              https://<project>.supabase.co
+#   SUPABASE_SERVICE_ROLE_KEY service-role key (NEVER ship to clients)
+#   SUPABASE_JWT_SECRET       Auth > JWT secret (verifies user access tokens)
