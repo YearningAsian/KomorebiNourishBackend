@@ -28,6 +28,7 @@ account.delete("/", async (c) => {
     "saved_meals",
     "water_logs",
     "nutrition_goals",
+    "recent_foods",
     "food_logs",
     "diary_entries",
   ] as const;

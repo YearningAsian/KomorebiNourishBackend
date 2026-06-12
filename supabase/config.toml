@@ -1,0 +1,20 @@
+# supabase/config.toml — fill in project_id after creating the Supabase project.
+# Run: supabase link --project-ref <ref>
+#      supabase db push
+
+[api]
+enabled = true
+
+[db]
+port = 54322
+shadow_port = 54320
+major_version = 15
+
+[studio]
+enabled = true
+
+[inbucket]
+enabled = true
+
+[auth]
+enabled = true

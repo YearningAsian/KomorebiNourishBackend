@@ -1,0 +1,11 @@
+# Required — copy to .dev.vars and fill in real values for local development.
+# .dev.vars is gitignored; never commit real secrets.
+
+SUPABASE_URL=https://<project-ref>.supabase.co
+SUPABASE_SERVICE_ROLE_KEY=eyJ...
+SUPABASE_JWT_SECRET=<jwt-secret-from-supabase-dashboard>
+
+# Optional — rate limiting via Upstash Redis.
+# Omit for local dev; limits are no-op when missing (fail-open).
+UPSTASH_REDIS_REST_URL=https://<region>.upstash.io
+UPSTASH_REDIS_REST_TOKEN=<token>
