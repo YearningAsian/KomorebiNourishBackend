@@ -1,5 +1,59 @@
+# ---------------------------------------------------------------------------
+# Komorebi Nourish Backend — Hono on Cloudflare Workers (Wrangler) + Supabase
+# Stack: Node / TypeScript
+# ---------------------------------------------------------------------------
+
+# --- Dependencies ---
 node_modules/
+.pnpm-store/
+
+# --- Build output / caches ---
 dist/
-.wrangler/
-.dev.vars
+build/
+out/
+coverage/
+.cache/
+.parcel-cache/
+.turbo/
+.vercel/
+*.tsbuildinfo
+
+# --- Logs ---
+*.log
+npm-debug.log*
+yarn-error.log*
+yarn-debug.log*
+.pnpm-debug.log*
+
+# --- Environment / secrets ---
+# Keep example files (.env.example, .env.sample, .dev.vars.example) tracked.
+.env
+.env.local
+.env.*.local
 *.env
+*.local
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+*.pem
+*.key
+
+# --- Cloudflare Wrangler ---
+.wrangler/
+wrangler/tmp/
+
+# --- Supabase ---
+# Local CLI state / generated artifacts. Keep config.toml and migrations tracked.
+supabase/.branches/
+supabase/.temp/
+supabase/.env
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- Editors / IDEs ---
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
