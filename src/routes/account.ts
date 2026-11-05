@@ -31,6 +31,7 @@ account.delete("/", async (c) => {
     "recent_foods",
     "food_logs",
     "diary_entries",
+    "symptom_logs",
   ] as const;
 
   for (const table of TABLES) {

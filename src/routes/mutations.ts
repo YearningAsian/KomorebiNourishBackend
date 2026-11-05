@@ -14,12 +14,14 @@ import { asEpochMs, isUuid } from "../shared";
  * entity_type → Supabase table:
  *   diary_entry → diary_entries
  *   food_log    → food_logs
+ *   symptom_log → symptom_logs
  */
 export const mutations = new Hono<AppEnv>();
 
 const ENTITY_TABLES: Record<string, string> = {
   diary_entry: "diary_entries",
   food_log: "food_logs",
+  symptom_log: "symptom_logs",
 };
 
 type MutationBody = {
